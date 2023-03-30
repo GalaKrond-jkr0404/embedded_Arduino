@@ -17,13 +17,13 @@ void loop() {
       cnt = 0;
       Time_cnt++;
       Serial.println(Time_cnt);
-      digitalWrite(13,digitalRead(13)^1);
+      digitalWrite(13,digitalRead(13)^1); // XOR
     }
         if(cnt++>=505){ // 505ms마다 조건 충족
       cnt1 = 0;
       Time_cnt++;
       Serial.println(Time_cnt);
-      digitalWrite(12,digitalRead(12)^1);
+      digitalWrite(12,digitalRead(12)^1); // XOR
 
     }
   }
